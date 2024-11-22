@@ -1,0 +1,293 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ljbsz" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ljbsz_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsc="clr-namespace:UiPath.GSuite.Sheets.Contracts;assembly=UiPath.GSuite" xmlns:ugsmc="clr-namespace:UiPath.GSuite.Sheets.Models.Columns;assembly=UiPath.GSuite" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ljbsz" sap:VirtualizedContainerService.HintSize="1145.6000000000001,792" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetId="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="accu.gen.000@gmail.com" Action="CreateIfNotExists" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" Filename="[companyName]" sap:VirtualizedContainerService.HintSize="449.6,768.8" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" ParentFolderId="1o9_lpkKGXs2G3semsk0_MKVJGafayPnYFcac2OeLxxw" UseConnectionService="False" UserEmail="accu.gen.000@gmail.com">
+      <ugas:GoogleSheetsApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,412.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uga:WriteRowConnections AllFields="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" RowPosition="{x:Null}" Spreadsheet="{x:Null}" ArrayRow="[{invDate, invNumber, dueDate, totalDue, netAmount}]" AuthScopesInvalid="False" BrowserItemFriendlyName="template" BrowserItemId="1iaaTNA6ubXi8CR06Pz50cmd_AdCi9NrZ4BWznt6GIsQ" ConnectionId="1de5bd4f-e8d7-40c0-9780-86aab05b806c" DataType="ArrayRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="382.4,352.8" sap2010:WorkflowViewState.IdRef="WriteRowConnections_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1o9_lpkKGXs2G3semsk0_MKVJGafayPnYFcac2OeLxxw" Range="Sheet 1" TemplateBrowserItemFriendlyName="template" TemplateBrowserItemId="https://docs.google.com/spreadsheets/d/1iaaTNA6ubXi8CR06Pz50cmd_AdCi9NrZ4BWznt6GIsQ/edit?usp=drivesdk" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+              <uga:WriteRowConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                      <InArgument x:TypeArguments="x:String">1iaaTNA6ubXi8CR06Pz50cmd_AdCi9NrZ4BWznt6GIsQ</InArgument>
+                      <InArgument x:TypeArguments="x:String">template</InArgument>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="UrlOrId" Capacity="1">
+                      <InArgument x:TypeArguments="x:String" />
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.FileIdBackup>
+              <uga:WriteRowConnections.InputDataTypeBackup>
+                <usau:BackupSlot x:TypeArguments="ugase:InputDataType" StoredValue="ArrayRow">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                      <InArgument x:TypeArguments="sd:DataRow">[invNumber + invDate + invNumber]</InArgument>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="IndividualFields" Capacity="2">
+                      <x:Array Type="ugsc:IRangeField">
+                        <ugsmc:RangeColumn DisplayName="Column 1" Guid="e5dd470d-c1df-4f3e-a840-caf4a0b631b8" Name="Column 1">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 2" Guid="34973b60-2ba0-44fb-b515-be5d919a7ee5" Name="Column 2">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 3" Guid="55fa4f93-cefe-44b3-9fa1-4350d45bf521" Name="Column 3">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 4" Guid="0d47c45e-3f40-4a39-8bac-1852af014d94" Name="Column 4">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 5" Guid="009ff00f-fc10-4607-bea9-93f96981908a" Name="Column 5">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 6" Guid="00ad45c9-ce00-4b23-afb5-7d9f08dba337" Name="Column 6">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 7" Guid="c2160f8a-5200-4563-a004-920b1abbfbe3" Name="Column 7">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 8" Guid="fd88b412-3edf-487c-9d43-9fe6d94bcff2" Name="Column 8">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 9" Guid="a025f014-c013-441a-8a9f-af9de93b0b8f" Name="Column 9">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 10" Guid="6e79b96f-7b9e-4b5c-9239-6656b8a3c894" Name="Column 10">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 11" Guid="c3944582-bb98-4380-8b28-fa3fa056d02f" Name="Column 11">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 12" Guid="5366a19c-e537-4ec7-aee9-22f5a6212d0f" Name="Column 12">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 13" Guid="cabb18d3-c238-4bad-bb36-3a36443df8e6" Name="Column 13">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 14" Guid="8320f1c0-5b25-48d6-bee7-c00d4e7dbb28" Name="Column 14">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 15" Guid="f6aabb1d-9e9d-4850-af7b-910ccab279ff" Name="Column 15">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 16" Guid="ce587ab9-8b72-4d3f-b0b9-7bbfaa3c4df6" Name="Column 16">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 17" Guid="b7fb1b0f-a630-4e23-9593-bc036cb8ba8f" Name="Column 17">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 18" Guid="138d3913-f7cb-4a12-a94c-58db4ca4214d" Name="Column 18">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 19" Guid="0137d2ab-49cb-44aa-b256-001d4b909b93" Name="Column 19">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 20" Guid="61ddb412-38c7-4b5a-8c42-f93b2d67a1a2" Name="Column 20">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 21" Guid="dbfa4e00-f252-47a7-8815-956e223c1105" Name="Column 21">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 22" Guid="7a458a44-9c0d-4b4f-b633-bec80c3b320f" Name="Column 22">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 23" Guid="9ce844f6-c773-4536-b60e-7ac7a6c86521" Name="Column 23">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 24" Guid="db0a4afd-3705-4b41-b077-e46306c77421" Name="Column 24">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 25" Guid="af971f6b-dcc2-4c15-9da2-2a5c5f69a16a" Name="Column 25">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                        <ugsmc:RangeColumn DisplayName="Column 26" Guid="26be1fc8-8b30-4c2d-b143-af98a53f70c4" Name="Column 26">
+                          <ugsmc:RangeColumn.Sample>
+                            <ugsmc:CellDetail Type="Object" TypeFormat="General" Value="Sample" />
+                          </ugsmc:RangeColumn.Sample>
+                        </ugsmc:RangeColumn>
+                      </x:Array>
+                      <uga:ActivityState>
+                        <uga:ActivityState.SelectedFields>
+                          <scg:List x:TypeArguments="uga:DynamicField" Capacity="0" />
+                        </uga:ActivityState.SelectedFields>
+                      </uga:ActivityState>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="ArrayRow" Capacity="1">
+                      <x:Null />
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.InputDataTypeBackup>
+              <uga:WriteRowConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="1iaaTNA6ubXi8CR06Pz50cmd_AdCi9NrZ4BWznt6GIsQ" FriendlyName="template" FullPathHint="My Drive/template" IdOrUrl="1o9_lpkKGXs2G3semsk0_MKVJGafayPnYFcac2OeLxxw" InputMode="UrlOrId" ParentIdFullPathHint="[Nothing]" />
+              </uga:WriteRowConnections.Item>
+              <uga:WriteRowConnections.RangeWriteModeBackup>
+                <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Append" Capacity="1">
+                      <x:String></x:String>
+                    </scg:List>
+                    <scg:List x:TypeArguments="x:Object" x:Key="Insert" Capacity="1">
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRowConnections.RangeWriteModeBackup>
+              <uga:WriteRowConnections.State>
+                <uga:ActivityState />
+              </uga:WriteRowConnections.State>
+            </uga:WriteRowConnections>
+          </Sequence>
+        </ActivityAction>
+      </ugas:GoogleSheetsApplicationScope.Body>
+      <ugas:GoogleSheetsApplicationScope.CredentialID>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugas:GoogleSheetsApplicationScope.CredentialID>
+      <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+    </ugas:GoogleSheetsApplicationScope>
+  </Sequence>
+</Activity>
